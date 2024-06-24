@@ -9,7 +9,7 @@ use std::env;
 
 const RSS_URL: &str = "https://developer.apple.com/news/releases/rss/releases.rss";
 const CHECK_INTERVAL: Duration = Duration::from_secs(3600); // Check every hour
-const TEST_MODE: bool = true; // Set this to true for testing
+const TEST_MODE: bool = false; // Set this to true for testing
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
